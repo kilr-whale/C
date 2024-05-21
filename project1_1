@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main(void) {
+
+	int korean, math, eng;
+	int total;
+	float average;
+
+	printf("1. 국어 점수 : ");
+	scanf_s("%d", &korean);
+	getchar();
+	
+	printf("2. 영어 점수 : ");
+	scanf_s("%d", &eng);
+	getchar();
+	
+	printf("3. 수학 점수 : ");
+	scanf_s("%d", &math);
+	getchar();
+
+	total = korean + eng + math;
+	average = total / 3.0;
+
+	printf("총 점 : %6d\n", total);
+	printf("평균 점수 : %7.2f\n", average);
+}
